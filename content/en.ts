@@ -51,7 +51,7 @@ export const en: Conteudo = {
     colunaFerramentas: "tools",
     linhas: [
       { categoria: "Languages", itens: ["Python", "TypeScript", "JavaScript", "Java", "C#", "PHP"] },
-      { categoria: "Data & AI", itens: ["Data cleaning", "Data analysis", "Machine Learning", "Visualization"] },
+      { categoria: "Data & AI", itens: ["Data cleaning", "Data analysis", "Machine Learning", "Computer vision", "Visualization"] },
       { categoria: "Databases", itens: ["SQL", "MySQL Workbench", "NoSQL", "Data modeling"] },
       { categoria: "Web", itens: ["Next.js", "Nest.js", "HTML5", "CSS"] },
       { categoria: "Mobile", itens: ["Flutter"] },
@@ -75,13 +75,15 @@ export const en: Conteudo = {
         ],
       },
       {
-        // TODO: describe the activities at UFVision.
-        cargo: "Associate member",
+        cargo: "Associate member · Computer vision",
         organizacao: "UFVision",
         periodo: "Dec 2024 – present",
         inicio: 2024.92,
         fim: null,
-        pontos: ["Associate member of the UFVision group"],
+        pontos: [
+          "Trained the computer vision model for one of the challenges of an SAE competition",
+          "Autonomous drone that identifies colors and the color sequence of the pads it must land on",
+        ],
       },
       {
         cargo: "Intern",

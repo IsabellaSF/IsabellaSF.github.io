@@ -51,7 +51,7 @@ export const pt: Conteudo = {
     colunaFerramentas: "ferramentas",
     linhas: [
       { categoria: "Linguagens", itens: ["Python", "TypeScript", "JavaScript", "Java", "C#", "PHP"] },
-      { categoria: "Dados & IA", itens: ["Limpeza de dados", "Análise de dados", "Machine Learning", "Visualização"] },
+      { categoria: "Dados & IA", itens: ["Limpeza de dados", "Análise de dados", "Machine Learning", "Visão computacional", "Visualização"] },
       { categoria: "Bancos de dados", itens: ["SQL", "MySQL Workbench", "NoSQL", "Modelagem"] },
       { categoria: "Web", itens: ["Next.js", "Nest.js", "HTML5", "CSS"] },
       { categoria: "Mobile", itens: ["Flutter"] },
@@ -75,13 +75,15 @@ export const pt: Conteudo = {
         ],
       },
       {
-        // TODO: descrever as atividades na UFVision.
-        cargo: "Membro associado",
+        cargo: "Membro associado · Visão computacional",
         organizacao: "UFVision",
         periodo: "dez 2024 – atual",
         inicio: 2024.92,
         fim: null,
-        pontos: ["Membro associado do grupo UFVision"],
+        pontos: [
+          "Treinamento do modelo de visão computacional para uma das provas de uma competição da SAE",
+          "Drone autônomo que identifica cores e a sequência de cores das bases onde deve pousar",
+        ],
       },
       {
         cargo: "Estagiária",
