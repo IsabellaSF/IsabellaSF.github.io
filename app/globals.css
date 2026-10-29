@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/* Paleta e linguagem neobrutalista: bordas grossas, sombras duras, cores chapadas. */
+@theme {
+  --color-papel: #eae6d4;
+  --color-creme: #ffe6a7;
+  --color-rosa: #ff44c7;
+  --color-verde: #71ff4a;
+  --color-lilas: #a78bfa;
+  --color-azul: #4d7cff;
+
+  --shadow-brutal-sm: 3px 3px 0 0 #000;
+  --shadow-brutal: 6px 6px 0 0 #000;
+  --shadow-brutal-lg: 10px 10px 0 0 #000;
+}
+
+/* Fontes carregadas pelo next/font (variáveis definidas em app/[lang]/layout.tsx). */
+@theme inline {
+  --font-display: var(--fonte-display), "Arial Black", sans-serif;
+  --font-sans: var(--fonte-texto), system-ui, sans-serif;
+  --font-mono: var(--fonte-mono), ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background-color: var(--color-papel);
+  color: #000;
+  /* Papel milimetrado: linhas finas a cada 24px e mais fortes a cada 120px. */
+  background-image:
+    linear-gradient(rgb(0 0 0 / 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(0 0 0 / 0.09) 1px, transparent 1px),
+    linear-gradient(rgb(0 0 0 / 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(0 0 0 / 0.035) 1px, transparent 1px);
+  background-size:
+    120px 120px,
+    120px 120px,
+    24px 24px,
+    24px 24px;
+}
+
+::selection {
+  background: var(--color-rosa);
+  color: #000;
+}
+
+:focus-visible {
+  outline: 3px solid #000;
+  outline-offset: 3px;
+}
+
+@keyframes girar {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes piscar {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
